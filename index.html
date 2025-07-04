@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nerds Hub - GitHub Frontend</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #121212;
+      color: #f1f1f1;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 1rem;
+      max-width: 600px;
+      margin: auto;
+      background: #1e1e1e;
+      border-radius: 10px;
+    }
+    h2 {
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+    }
+    form {
+      margin-bottom: 2rem;
+    }
+    input[type="text"], input[type="password"], textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #444;
+      background: #2a2a2a;
+      color: #f1f1f1;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      background: #3498db;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+    a {
+      color: #4da6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nerds Hub</h1>
+    <p>Frontend hosted on GitHub Pages</p>
+  </header>
+
+  <main>
+    <h2>Login</h2>
+    <form action="https://yourname.infinityfreeapp.com/login.php" method="post">
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+
+    <h2>Sign Up</h2>
+    <form action="https://yourname.infinityfreeapp.com/register.php" method="post">
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Register</button>
+    </form>
+
+    <h2>Post to Forum</h2>
+    <form action="https://yourname.infinityfreeapp.com/post.php" method="post">
+      <input type="text" name="title" placeholder="Title" required />
+      <textarea name="content" placeholder="Your message..." required></textarea>
+      <button type="submit">Post</button>
+    </form>
+
+    <p style="text-align:center;"><a href="https://yourname.infinityfreeapp.com/forum.php">View Forum</a></p>
+  </main>
+</body>
+</html>
